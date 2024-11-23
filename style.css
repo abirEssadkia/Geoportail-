@@ -1,0 +1,77 @@
+html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(75, 66, 177);
+    padding: 1rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo .text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items > li {
+    position: relative;
+}
+
+.nav-items > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.nav-items .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f9fa;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.nav-items .dropdown-menu > li > a {
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-items .dropdown-menu > li > a:hover {
+    background-color: #e9ecef;
+}
+
+.nav-items > li:hover .dropdown-menu {
+    display: block;
+}
